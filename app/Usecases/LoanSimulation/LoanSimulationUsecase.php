@@ -22,7 +22,7 @@ class LoanSimulationUsecase
         return $this->saveLoanSimulation($loanAmount, $birthDate, $months, $totalAmountToPay, $monthlyPayment, $totalInterest);
     }
 
-    #region metodo private
+    #region private
     private function calculateAge($birthDate)
     {
         return Carbon::parse($birthDate)->age;
